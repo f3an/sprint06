@@ -14,7 +14,6 @@ const server = http.createServer(function (req, res) {
     });
     req.on("end", function () {
       res.writeHead(200, { "Content-Type": "application/json" });
-      
       res.end(body);
     });
   }
